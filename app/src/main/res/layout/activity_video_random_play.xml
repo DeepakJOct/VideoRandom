@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoRandomPlay"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="#000000">
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textview_now_playing"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Now Playing: "/>
+
+    <Button style="@style/DefaultButton"
+        android:id="@+id/btn_stop_playing"
+        android:layout_centerHorizontal="true"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp"
+        android:text="Stop Playback"
+        android:textColor="@drawable/button_text_color"
+        android:layout_alignTop="@+id/rel2"/>
+
+    <Button style="@style/DefaultButton"
+        android:id="@+id/btn_close"
+        android:layout_width="375dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Close Player"
+        android:textColor="@drawable/button_text_color"
+        android:clickable="true"
+        android:layout_alignTop="@+id/btn_stop_playing"/>
+
+</RelativeLayout>
